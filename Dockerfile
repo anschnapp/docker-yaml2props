@@ -1,4 +1,5 @@
-FROM python
+FROM python:alpine
+RUN apk --no-cache add curl
 RUN pip install --upgrade pip && pip install pyperclip
 RUN mkdir /workdir
 RUN mkdir /script
